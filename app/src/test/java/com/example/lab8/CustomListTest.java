@@ -65,6 +65,12 @@ public class CustomListTest {
     }
 
 
+    /**
+     * initialize empty list and check if its size is 0
+     * then add a city to it.
+     * check if size is now 1. then delete that city
+     * size should be back to 0
+     */
     @Test
     public void countCitiesList(){
         list = MockCityList();
