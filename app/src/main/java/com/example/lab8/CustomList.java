@@ -78,9 +78,17 @@ public class CustomList extends ArrayAdapter<City> {
      * @param city
      */
     public void deleteCity(City city){
-//        if(cities.contains(city)){
-//            cities.remove(city);
-//        }
+        if(cities.contains(city)){
+            cities.remove(city);
+        }
+    }
+
+    /**
+     * return length of city lsit
+     * @return
+     */
+    public int countCities(){
+        return -1;
     }
 
 }
