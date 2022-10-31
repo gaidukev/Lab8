@@ -35,4 +35,19 @@ public class CustomListTest {
         assertEquals(list.getCount(), listSize + 1);
     }
 
+    /**
+     * create a mock city list
+     * add a new city to it
+     * and check that hasCity returns that the city is in fact in list
+     */
+    @Test
+    public void hasCityTest(){
+
+        list = MockCityList();
+        City mockCity = new City("Estevan", "SK");
+        list.addCity(mockCity);
+        assertEquals(true, list.hasCity(mockCity));
+    }
+
+
 }
